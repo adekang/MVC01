@@ -1,0 +1,16 @@
+#app3 {
+    border: 1px solid lightcoral;
+}
+
+#app3 .square {
+    border: 1px solid goldenrod;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    width: 15vw;
+    height: 15vw;
+    transition: transform 1s linear;
+}
+
+#app3 .square.active {
+    transform: translateX(6vw);
+}

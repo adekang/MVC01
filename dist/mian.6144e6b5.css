@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+body::-webkit-scrollbar {
+	display: none
+}
+body>.page {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.page>section {
+    width: 50vw;
+    height: 50vh;
+
+}
+#app1 {
+	border: 1px solid red;
+}
+
+#app2 {
+    border: 1px solid blue;
+}
+
+#app2 .tab-bar {
+    display: flex;
+}
+
+#app2 .tab-bar>li {
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+#app2 .tab-bar>li.selected {
+    background-color: rgb(59, 105, 150);
+}
+
+#app2 .tab-content {}
+
+#app2 .tab-content>li {
+    display: none;
+}
+
+#app2 .tab-content>li.active {
+    display: block;
+}
+#app3 {
+    border: 1px solid lightcoral;
+}
+
+#app3 .square {
+    border: 1px solid goldenrod;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    width: 15vw;
+    height: 15vw;
+    transition: transform 1s linear;
+}
+
+#app3 .square.active {
+    transform: translateX(6vw);
+}
+#app4 {
+    border: 1px solid green;
+}
+
+#app4>.circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: 1px solid red;
+    position: relative;
+    top: 3vw;
+    left: 3vw;
+}
+
+@keyframes change {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+#app4 .circle.active {
+    animation: change 1s infinite alternate-reverse linear;
+
+}
+
+/*# sourceMappingURL=mian.6144e6b5.css.map */
